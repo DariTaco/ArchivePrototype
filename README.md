@@ -36,14 +36,14 @@ and therefore don’t have to be stored here.
 
 ### Object detection models folder: 
 
-the TensorFlow object detection models as well as the YOLOv3-608 models are stored here. **you must download the models from the provided links and name them accordingly** 
-* faster_rcnn_oi.pb(See [TensorFlow Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md): Faster R-CNN Inception ResNet v2 Atrous Oid v4) 
+the TensorFlow object detection models as well as the YOLOv3-608 models are stored here. **You must download the models from the provided links and name them accordingly**.
+* faster_rcnn_oi.pb (See [TensorFlow Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md): Faster R-CNN Inception ResNet v2 Atrous Oid v4) 
 * faster_rcnn_coco.pb (See [TensorFlow Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md): Faster R-CNN Nas COCO) 
 * mask_rcnn_coco.pb (See [TensorFlow Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md): Mask R-CNN ResNet50 Atrous COCO) 
-* ssd_inception_coco.pb(See [TensorFlow Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md): SSD Inception v2 COCO) 
-* ssd_resnet50_coco.pb(See [TensorFlow Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md): SSD ResNet50 v1 FPN Shared Box Predictor 640x640 COCO14 Sync)
+* ssd_inception_coco.pb (See [TensorFlow Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md): SSD Inception v2 COCO) 
+* ssd_resnet50_coco.pb (See [TensorFlow Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md): SSD ResNet50 v1 FPN Shared Box Predictor 640x640 COCO14 Sync)
 * yolov3oi.cfg, yolov3oi.weights (See [here](https://pjreddie.com/darknet/yolo/): the YOLOv3-608 model that was trained on the Open Images dataset  plus weights)
-* yolov3.cfg, yolov3.weights(See [here](https://pjreddie.com/darknet/yolo/): the YOLOv3-608 model that was trained on the COCO dataset  plus weights) 
+* yolov3.cfg, yolov3.weights (See [here](https://pjreddie.com/darknet/yolo/): the YOLOv3-608 model that was trained on the COCO dataset  plus weights) 
 
 ### Temp files folder: 
 
@@ -54,3 +54,13 @@ which are displayed in the UI in the image upload area.
 * temp.jpg
 * tempObjects.jpg
 * tempRecog.jpg
+
+
+### Installed packages
+* numpy 1.17.0
+* opencv-python 4.2.0.32
+* scikit-learn 0.21.3
+* tensorflow 2.1.0
+* Pillow 6.0.0
+* PySide2 5.12.3
+* face-recognition 1.2.3
