@@ -7,12 +7,12 @@
 
 this folder is the main folder and contains all the subfolders and the five python files with the application code.
 It also contains a ‘.jpg’ file named ‘white600x600’ which is used as background image for the image upload area in the UI.
-* ‘Prototyp.py’ 
-* ‘FaceDetect.py’ 
-* ‘FaceRecog.py’ 
-* ‘ObjectDetect.py’ ‘
-* ObjectLists.py’ 
-* ‘white600x600.jpg’
+* Prototyp.py
+* FaceDetect.py 
+* FaceRecog.py 
+* ObjectDetect.py
+* ObjectLists.py
+* white600x600.jpg
 
 
 ### Face recognition folder: 
@@ -36,7 +36,7 @@ and therefore don’t have to be stored here.
 
 ### Object detection models folder: 
 
-the TensorFlow object detection models as well as the YOLOv3-608 models are stored here. 
+the TensorFlow object detection models as well as the YOLOv3-608 models are stored here. **you must download the models from the provided links and name them accordingly** 
 * faster_rcnn_oi.pb(See [TensorFlow Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md): Faster R-CNN Inception ResNet v2 Atrous Oid v4) 
 * faster_rcnn_coco.pb (See [TensorFlow Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md): Faster R-CNN Nas COCO) 
 * mask_rcnn_coco.pb (See [TensorFlow Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md): Mask R-CNN ResNet50 Atrous COCO) 
