@@ -1,4 +1,7 @@
 # ArchivePrototype
+The prototype presented here was originally developed for a large archive with historical pictures. 
+The user interface allows to easily apply different object detection and face detection models to any image. 
+In addition, faces can also be recognized by using a KNN.
 
 ## Project Structure
 ![project structure](./images/image(9).png "Project Structure")
