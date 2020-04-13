@@ -1,5 +1,6 @@
 # ArchivePrototype
 
+## Project Structure
 ![project structure](./images/image(9).png "Project Structure")
 
 
@@ -64,3 +65,42 @@ which are displayed in the UI in the image upload area.
 * Pillow 6.0.0
 * PySide2 5.12.3
 * face-recognition 1.2.3
+
+
+## User Interface
+The UI is a window with two tabs. The ‘objects’-  and the ‘faces’ tab. 
+The ‘faces’ tab contains everything related to face detection and face recognition, 
+whereas the ‘objects’ tab contains everything related to object detection.
+
+![Objects Tab](./images/image(17).png "Objects Tab")
+
+The workflow is as follows. First an image has to be uploaded in the faces tab. 
+Otherwise none of the other functionality will be available. By clicking the ‘Upload Image …’ button, a file dialog opens 
+and a ‘.jpg’ image of any size and color can be selected by the user. 
+The uploaded file is normalized automatically and displayed in the center of the window. 
+If no image has been uploaded yet, a white square is displayed in the center instead. 
+After the image was uploaded, the user can detect objects by selecting one of the seven object detection methods 
+from the drop-down menu and clicking the button ‘Objects’ in the ‘objects’ tab. 
+Red bounding boxes with the class names will be put around the detected objects and the detected classes. 
+The confidence they were detected with will be displayed in a small window next to the image. 
+It’s also displayed how long it took to detect the objects and how many were detected. 
+Some of the models take a little longer to detect objects. 
+So sometimes it is necessary to wait a little bit until results are visible.
+
+![Faces Tab](./images/image(16).png "Faces Tab")
+
+Alternatively, the user can detect faces by selecting one of the seven detection models from the drop-down menu 
+in the ‘faces’ tab and clicking the button ‘Detect Faces’. Red bounding boxes will be drawn around the detected faces. 
+The time it took the model to detect the faces, as well as the number of faces that were detected will be displayed next to the image. 
+Only after the face detection took place, the user can recognize faces. 
+In order to start the recognition, the user has to choose one choose one of the KNN options 
+from the drop-down menu in the faces tab and click the ‘Recognize Faces’ button. 
+The bounding boxes of the faces that were successfully recognized will turn blue 
+and the name of the recognized person will appear beneath it. 
+The bounding boxes of faces that could not be identified will stay red and the name ‘unknown’ will appear beneath it. 
+A small window next to the image then shows the names of the recognized persons and the confidence they were recognized with. 
+The number of faces that were recognized and the recognition time will be displayed as well. 
+The user can upload a new picture or select other models at any time. 
+As long as no detection or recognition is currently in progress. 
+It can happen that with some models it takes a little longer to see results. 
+The KNN is also affected. It is currently being trained anew with every execution.
